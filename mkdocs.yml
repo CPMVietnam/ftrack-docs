@@ -12,16 +12,18 @@ theme:
   name: material
   language: vi
   custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Chuyển sang chế độ tối
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Chuyển sang chế độ sáng
@@ -85,6 +87,9 @@ plugins:
             Biểu đồ: Charts
             Báo cáo: Report
             Câu hỏi thường gặp: FAQ
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 markdown_extensions:
   - admonition
