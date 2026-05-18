@@ -48,6 +48,43 @@ plugins:
         - locale: en
           name: English
           build: true
+          nav_translations:
+            Trang chủ: Home
+            Đăng nhập: Login
+            Chuẩn bị dữ liệu: Prepare Data
+            Danh sách điểm bán: Store List
+            Danh sách nhân viên/tài khoản: Staff Accounts
+            Tạo bộ câu hỏi/chương trình khảo sát: Survey Program
+            Kế hoạch viếng thăm: Visit Plan
+            Cài đặt: Settings
+            Cài đặt chung: General Settings
+            Cài đặt tài khoản: Account Settings
+            Quản lý tài khoản: Account Management
+            Cài đặt hình ảnh: Image Settings
+            Tình trạng ghé thăm: Visit Status
+            Tạo điểm bán/cửa hàng: Store Setup
+            Cài đặt chương trình: Program Settings
+            Import Visit: Import Visit
+            Bán hàng: Sales
+            Tài sản/POSM: Assets/POSM
+            Kiểm soát chất lượng: Quality Control
+            Thiết lập thông tin: Info Setup
+            Ứng dụng di động: Mobile App
+            Thực hiện khảo sát: Survey
+            Tạo cửa hàng mới: Create New Store
+            Tạo Visit Plan: Create Visit Plan
+            Xóa dữ liệu: Delete Data
+            Chia sẻ dữ liệu: Share Data
+            Yêu cầu nhập liệu: Survey Requirements
+            Dữ liệu thực hiện: Reports
+            Danh sách thực hiện: Execution List
+            Danh sách cửa hàng: Store List
+            Quản lý đơn hàng: Order Management
+            Quản lý tài sản: Asset Management
+            Lộ trình nhân viên: Employee Route
+            Biểu đồ: Charts
+            Báo cáo: Report
+            Câu hỏi thường gặp: FAQ
 
 markdown_extensions:
   - admonition
