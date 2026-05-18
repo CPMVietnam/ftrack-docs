@@ -1,0 +1,115 @@
+site_name: Ftrack Documentation
+site_description: Hướng dẫn sử dụng nền tảng Ftrack — Field Force, HR & In-Store Management
+site_url: https://docs.ftrack.vn
+site_author: Ftrack Vietnam
+
+repo_url: https://github.com/ftrackvietnam/ftrack-docs
+repo_name: ftrackvietnam/ftrack-docs
+
+copyright: Copyright &copy; 2025 Ftrack Vietnam
+
+theme:
+  name: material
+  language: vi
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Chuyển sang chế độ tối
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Chuyển sang chế độ sáng
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: vi
+          default: true
+          name: Tiếng Việt
+          build: true
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Trang chủ: index.md
+  - Đăng nhập: login.md
+  - Chuẩn bị dữ liệu:
+    - prepare-data/index.md
+    - Danh sách điểm bán: prepare-data/store-list.md
+    - Danh sách nhân viên/tài khoản: prepare-data/staff-accounts.md
+    - Tạo bộ câu hỏi/chương trình khảo sát: prepare-data/survey-program.md
+    - Kế hoạch viếng thăm: prepare-data/visit-plan.md
+  - Cài đặt:
+    - settings/index.md
+    - Cài đặt chung: settings/general.md
+    - Cài đặt tài khoản: settings/account-settings.md
+    - Quản lý tài khoản: settings/account-management.md
+    - Cài đặt hình ảnh: settings/image-settings.md
+    - Tình trạng ghé thăm: settings/visit-status.md
+    - Tạo điểm bán/cửa hàng: settings/store-setup.md
+    - Cài đặt chương trình: settings/program-settings.md
+    - Import Visit: settings/import-visit.md
+    - Bán hàng: settings/sales.md
+    - Tài sản/POSM: settings/posm-assets.md
+    - Kiểm soát chất lượng: settings/quality-control.md
+    - Thiết lập thông tin: settings/info-setup.md
+  - Ứng dụng di động:
+    - mobile-app/index.md
+    - Đăng nhập: mobile-app/login.md
+    - Check In: mobile-app/check-in.md
+    - Thực hiện khảo sát: mobile-app/survey.md
+    - Check Out: mobile-app/check-out.md
+    - Map: mobile-app/map.md
+    - Tạo cửa hàng mới: mobile-app/create-store.md
+    - Tạo Visit Plan: mobile-app/create-visit-plan.md
+    - Xóa dữ liệu: mobile-app/delete-data.md
+    - Chia sẻ dữ liệu: mobile-app/share-data.md
+    - Yêu cầu nhập liệu: mobile-app/survey-requirements.md
+  - Dữ liệu thực hiện:
+    - reports/index.md
+    - Danh sách thực hiện: reports/execution-list.md
+    - Danh sách cửa hàng: reports/store-list.md
+    - Quản lý đơn hàng: reports/order-management.md
+    - Quản lý tài sản: reports/asset-management.md
+    - Lộ trình nhân viên: reports/employee-route.md
+    - Biểu đồ: reports/charts.md
+    - Map: reports/map.md
+    - Báo cáo: reports/report.md
+  - Câu hỏi thường gặp: faq.md
